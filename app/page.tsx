@@ -1,14 +1,7 @@
 export default function Home() {
-<<<<<<< HEAD
   return (
     <main>
       <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
-=======
-  return(
-    <main>
-      <section className="flex flex-col-reverse items-center 
-      justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
->>>>>>> e517dc4a8c05b989d7787ee227eb495b07ef1de1
         <div className="flex-1 space-y-6">
           <p className="hidden text-sm text-gray-600 uppercase md:block">
             Your go-to platform for 3D printing files
