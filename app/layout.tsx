@@ -2,6 +2,7 @@ import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
 import Image from 'next/image'
 import Link from 'next/link'
+import type {RootLayoutProps} from "@/app/types"
 import PFLogoIcon from "@/public/printforge-logo-icon.svg"
 import PFLogo from "@/public/printforge-logo.svg"
 
@@ -19,9 +20,7 @@ const montserratAlternates = Montserrat_Alternates({
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${albertSans.className} ${montserratAlternates.variable}`}>
@@ -45,7 +44,7 @@ export default function RootLayout({
             </div>
             </Link>
             <ul className="flex items-center gap-2.5">
-              <li className="text-sm uppercase cursor-pointer"><Link href="/">3D Models</Link></li>
+              <li className="text-sm uppercase cursor-pointer"><Link href="/3d-models">3D Models</Link></li>
               <li className="text-sm uppercase cursor-pointer"><Link href="/about">About</Link></li>
             </ul>
           </nav>
